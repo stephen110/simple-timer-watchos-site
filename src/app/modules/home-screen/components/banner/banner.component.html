@@ -1,0 +1,22 @@
+<div
+  class="stw-banner"
+  [class.small-form]="_screenSizeService.isSmallForm$() | async"
+>
+  <div class="stw-banner__content">
+    <div class="stw-banner__title-container">
+      <h1 class="stw-banner__title">
+        Moment
+        <span class="title__subtitle">A simple timer for WatchOS</span>
+      </h1>
+    </div>
+    <div class="stw-banner_image-container">
+      <img
+        class="stw-banner__image"
+        ngSrc="assets/simple-timer-showcase-1.png"
+        [priority]="true"
+        [width]="270"
+        [height]="430"
+      />
+    </div>
+  </div>
+</div>

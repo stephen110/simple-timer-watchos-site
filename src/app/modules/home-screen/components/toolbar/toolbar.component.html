@@ -6,23 +6,14 @@
     [height]="48"
   />
   <nav>
-    <a
-      mat-button
+    <a mat-button
+      *ngFor="let section of _sections$ | async"
       class="app-toolbar__nav-button"
-      routerLink="/"
       routerLinkActive="app-toolbar__nav-button--selected"
-      ariaCurrentWhenActive="page"
+      [routerLink]="section.link"
+      [ariaCurrentWhenActive]="_activeSection === section.id"
     >
-      Home
-    </a>
-    <a
-      mat-button
-      class="app-toolbar__nav-button"
-      routerLink="/support"
-      routerLinkActive="app-toolbar__nav-button--selected"
-      ariaCurrentWhenActive="page"
-    >
-      Support
+      {{ section.title }}
     </a>
   </nav>
 </mat-toolbar>

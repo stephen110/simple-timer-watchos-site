@@ -5,9 +5,13 @@ import { HomeScreenComponent } from './modules/home-screen/components/home-scree
 
 const routes: Routes = [
   {
-    path: '',
+    path: ':section',
     component: HomeScreenComponent,
   },
+  {
+    path: '**',
+    redirectTo: '/home'
+  }
 ];
 
 @NgModule({

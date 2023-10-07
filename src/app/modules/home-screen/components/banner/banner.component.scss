@@ -1,0 +1,64 @@
+.stw-banner {
+  height: 600px;
+  position: relative;
+}
+
+.stw-banner.small-form {
+  height: auto;
+  padding: 40px;
+  gap: 30px;
+}
+
+.stw-banner__content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.small-form .stw-banner__content {
+  flex-flow: column;
+}
+
+.stw-banner__title-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stw-banner__title {
+  text-align: left;
+  font-size: 3.0em;
+  margin: 0;
+}
+
+.small-form .stw-banner__title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.title__subtitle {
+  display: block;
+  font-size: 0.4em;
+  padding-left: 10px;
+}
+
+.stw-banner_image-container {
+  position: relative;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 40px;
+}
+
+.stw-banner__image {
+
+}

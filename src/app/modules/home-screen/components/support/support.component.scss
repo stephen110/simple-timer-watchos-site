@@ -1,0 +1,31 @@
+.stw-support {
+  height: 250px;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.stw-support h2 {
+  font-size: 2.0em;
+}
+
+.support__row {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.support__row mat-icon {
+  color: inherit;
+  font-size: 36px;
+  height: 36px;
+  width: 36px;
+  margin-right: 20px;
+}
+
+.support__row a {
+  flex: 1;
+  color: inherit;
+}

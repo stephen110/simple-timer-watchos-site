@@ -6,17 +6,30 @@
   $primary-palette: map.get($color-config, 'primary');
   $accent-palette: map.get($color-config, 'accent');
 
-  h1 {
-    color: mat.get-contrast-color-from-palette($primary-palette, 50);
+  .app-toolbar__nav-button--selected {
+    background-color: mat.get-contrast-color-from-palette($primary-palette, 50) !important;
+    color: mat.get-color-from-palette($primary-palette, 600) !important;;
   }
 
   .stw-banner {
     background: mat.get-color-from-palette($primary-palette, 600);
   }
 
+  .stw-banner__title {
+    color: mat.get-contrast-color-from-palette($primary-palette, 50);
+  }
+
   .stw-instructions__instruction .instruction__content mat-icon,
   .stw-instructions__instruction .bold {
     color: mat.get-color-from-palette($primary-palette, 600);
+  }
+
+  .stw-support {
+    background: mat.get-color-from-palette($primary-palette, 600);
+  }
+
+  .stw-support {
+    color: mat.get-contrast-color-from-palette($primary-palette, 50);
   }
 }
 

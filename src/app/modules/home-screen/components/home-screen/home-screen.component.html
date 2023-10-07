@@ -1,22 +1,15 @@
-<stw-toolbar></stw-toolbar>
-<div class="home-screen__content">
-  <div class="stw-banner">
-    <div class="stw-banner__content">
-      <div class="stw-banner__title-container">
-        <h1 class="stw-banner__title">
-          Simple Timer
-          <span class="title__subtitle">for WatchOS</span>
-        </h1>
-      </div>
-      <div class="stw-banner_image-container">
-        <img
-          class="stw-banner__image"
-          ngSrc="assets/simple-timer-showcase-1.png"
-          [width]="270"
-          [height]="430"
-        />
-      </div>
-    </div>
+<div
+  class="stw-home-screen"
+  [class.small-form]="_screenSizeService.isSmallForm$() | async"
+>
+  <stw-toolbar></stw-toolbar>
+  <div
+    #content
+    class="home-screen__content"
+    (scroll)="handleScroll($event)"
+  >
+    <stw-banner id="stw-banner"></stw-banner>
+    <stw-instructions></stw-instructions>
+    <stw-support id="stw-contact"></stw-support>
   </div>
-  <stw-instructions></stw-instructions>
 </div>
