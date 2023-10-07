@@ -1,0 +1,58 @@
+.stw-instructions {
+  text-align: center;
+  color: white;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+h2 {
+  margin-bottom: 50px;
+  line-height: 40px;
+  margin-top: 0;
+}
+
+.stw-instructions__instruction {
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto 40px auto;
+  text-align: left;
+}
+
+.stw-instructions__instruction.additional-instruction {
+  margin-top: 40px;
+  text-align: center;
+  transform: none;
+}
+
+.stw-instructions__instruction h3 {
+  text-align: left;
+  margin-bottom: 5px;
+  margin-top: 0;
+  margin-left: 65px;
+}
+
+.stw-instructions__instruction .instruction__content {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  min-height: 60px;
+}
+
+.stw-instructions__instruction .instruction__content mat-icon {
+  width: 36px;
+  height: 36px;
+  margin-right: 30px;
+  font-size: 36px;
+}
+
+.stw-instructions__instruction span {
+  text-align: inherit;
+  line-height: 28px;
+  margin: 0;
+  flex: 1;
+}
+
+.stw-instructions__instruction .bold {
+  font-weight: bold;
+}

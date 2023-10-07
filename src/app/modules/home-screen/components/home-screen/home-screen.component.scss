@@ -1,0 +1,72 @@
+:host {
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+}
+
+stw-toolbar {
+  z-index: 100;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+.home-screen__content {
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  margin-top: 64px;
+}
+
+.stw-banner {
+  height: 600px;
+  position: relative;
+}
+
+.stw-banner__content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  margin: auto;
+}
+
+.stw-banner__title-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stw-banner__title {
+  text-align: left;
+  margin: 0;
+  font-size: 3.0em;
+}
+
+.title__subtitle {
+  display: block;
+  font-size: 0.5em;
+  padding-left: 10px;
+}
+
+.stw-banner_image-container {
+  position: relative;
+  flex: 1;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 40px;
+}
+
+.stw-banner__image {
+
+}
