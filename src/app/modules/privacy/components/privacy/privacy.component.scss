@@ -1,0 +1,46 @@
+:host {
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+
+}
+
+.stw-privacy {
+  height: 100%;
+  position: relative;
+  box-sizing: border-box;
+  display: flex;
+  flex-flow: column;
+}
+
+stw-toolbar {
+  z-index: 100;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+.stw-privacy__content {
+  flex: 1;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+  margin-top: 64px;
+  margin-bottom: 100px;
+}
+
+.small-form .stw-privacy__content {
+  margin-top: 56px;
+  margin-bottom: 140px;
+}
+
+stw-footer {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 100px;
+}
+
+.small-form stw-footer {
+  height: 140px;
+}

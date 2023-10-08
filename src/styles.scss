@@ -3,6 +3,8 @@
 // For more information: https://material.angular.io/guide/theming
 @use '@angular/material' as mat;
 @use 'app/modules/home-screen/home-screen.component.theme' as home-screen;
+@use 'app/modules/privacy/privacy.component.theme' as privacy;
+
 // Plus imports for other components in your app.
 
 // Include the common styles for Angular Material. We include this here so that you only
@@ -78,6 +80,7 @@ $simple-timer-watchos-theme: mat.define-light-theme((
 // that you are using.
 @include mat.all-component-themes($simple-timer-watchos-theme);
 @include home-screen.theme($simple-timer-watchos-theme);
+@include privacy.theme($simple-timer-watchos-theme);
 
 /* You can add global styles to this file, and also import other style files */
 

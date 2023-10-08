@@ -31,5 +31,13 @@
   .stw-support {
     color: mat.get-contrast-color-from-palette($primary-palette, 50);
   }
+
+  .stw-footer {
+    color: white;
+  }
+
+  .stw-footer a {
+    color: mat.get-color-from-palette($primary-palette, 600);
+  }
 }
 

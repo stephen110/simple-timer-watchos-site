@@ -1,0 +1,10 @@
+<div
+  class="stw-privacy"
+  [class.small-form]="_screenSizeService.isSmallForm$() | async"
+>
+  <stw-toolbar></stw-toolbar>
+  <div class="stw-privacy__content">
+    <stw-privacy-policy></stw-privacy-policy>
+  </div>
+  <stw-footer></stw-footer>
+</div>
